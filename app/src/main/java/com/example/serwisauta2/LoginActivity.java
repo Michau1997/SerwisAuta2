@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
 
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
-        if(currentUser != null)
+        if(currentUser != null && currentUser.isEmailVerified())
         {
             SendUserToMainActivity();
         }
@@ -92,10 +92,20 @@ public class LoginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful())
                             {
-                                SendUserToMainActivity();
+                                if(mAuth.getCurrentUser().isEmailVerified())
+                                {
+                                    SendUserToMainActivity();
 
-                                Toast.makeText(LoginActivity.this, "Pomyślnie zalogowano.", Toast.LENGTH_SHORT).show();
-                                loadingBar.dismiss();
+                                    Toast.makeText(LoginActivity.this, "Pomyślnie zalogowano.", Toast.LENGTH_SHORT).show();
+                                    loadingBar.dismiss();
+                                }
+                                else
+                                {
+
+                                    Toast.makeText(LoginActivity.this, "Błąd: Proszę zweryfikować swój adres email", Toast.LENGTH_SHORT).show();
+                                    loadingBar.dismiss();
+                                }
+
                             }
                             else
                             {

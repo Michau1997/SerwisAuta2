@@ -5,11 +5,26 @@
         android:id="@+id/nav_cars"
         android:title="Moje auta"/>
     <item
-        android:id="@+id/nav_badtech"
+        android:id="@+id/nav_technicaltests"
         android:title="Badania techniczne"/>
     <item
-        android:id="@+id/nav_profile"
-        android:title="Profil"/>
+        android:id="@+id/nav_insurance"
+        android:title="Ubezpieczenie"/>
+    <item
+        android:id="@+id/nav_tires"
+        android:title="Opony"/>
+    <item
+        android:id="@+id/nav_oil"
+        android:title="Olej"/>
+    <item
+        android:id="@+id/nav_filters"
+        android:title="Filtry"/>
+    <item
+        android:id="@+id/nav_breaks"
+        android:title="Hamulce"/>
+    <item
+        android:id="@+id/nav_fuel"
+        android:title="Spalanie paliwa"/>
     <item
         android:id="@+id/nav_logout"
         android:title="Wyloguj"

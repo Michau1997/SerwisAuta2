@@ -126,12 +126,28 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_cars:
                 Toast.makeText(this, "Moje auta", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.nav_badtech:
+            case R.id.nav_technicaltests:
                 Toast.makeText(this, "Badania techniczne", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.nav_profile:
-                Toast.makeText(this, "Profil", Toast.LENGTH_SHORT).show();
+            case R.id.nav_insurance:
+                Toast.makeText(this, "Ubezpieczenie", Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.nav_tires:
+                Toast.makeText(this, "Opony", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_oil:
+                Toast.makeText(this, "Olej", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_filters:
+                Toast.makeText(this, "Filtry", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_breaks:
+                Toast.makeText(this, "Hamulce", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_fuel:
+                Toast.makeText(this, "Spalanie paliwa", Toast.LENGTH_SHORT).show();
+                break;
+
             case R.id.nav_logout:
                 mAuth.signOut();
                 SendUserToLoginActivity();

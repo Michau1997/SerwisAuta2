@@ -102,9 +102,19 @@ public class RegisterActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful())
                             {
-                                SendUserToMainActivity();
+                                mAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if(task.isSuccessful()){
+                                            SendUserToLoginActivity();
 
-                                Toast.makeText(RegisterActivity.this, "Zarejestrowano pomyślnie...", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(getApplicationContext(), "Pomyślnie zarejestrowano konto. Zweryfikuj swój email.", Toast.LENGTH_SHORT).show();
+                                        }else{
+                                            Toast.makeText(getApplicationContext(), "Rejestracja nie przebiegła pomyślnie, spróbuj ponownie", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+
+                                });
                                 loadingBar.dismiss();
                             }
                             else
