@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/LinearLayout2">
+
+
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/logo" />
+
+
+        <EditText
+
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/inputs"
+            android:hint="Wprowadź email..."
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wprowadź hasło..."
+            android:layout_margin="8dp"
+            android:background="@drawable/inputs"
+            android:drawableLeft="@drawable/password"
+            android:padding="10dp"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/buttonLogin"
+            android:text="Zaloguj się"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:background="@drawable/button"/>
+        <TextView
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:layout_margin="15dp"
+            android:text="Nie posiadasz konta? Kliknij tutaj aby się zarejestrować."
+            android:id="@+id/register_acc_link"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLoginWith"
+            android:textColor="#FFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="albo zaloguj się przez:"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LinearLayout2"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="12dp">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="105dp"
+            android:src="@drawable/google"/>
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="105dp"
+            android:src="@drawable/facebook"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

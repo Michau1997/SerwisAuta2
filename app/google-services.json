@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "595813547414",
+    "firebase_url": "https://serwis-auta-2.firebaseio.com",
+    "project_id": "serwis-auta-2",
+    "storage_bucket": "serwis-auta-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595813547414:android:adf8613166ea845199b1b7",
+        "android_client_info": {
+          "package_name": "com.example.serwisauta2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595813547414-gtp17846evqbfvhhrgbqoqrofj53kltg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.serwisauta2",
+            "certificate_hash": "e9952d8d7454180745c140e6c7e00a61e217195a"
+          }
+        },
+        {
+          "client_id": "595813547414-1egvtpoj5q4p6g7qs45p9236rr12ff3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkQBrUUxRTssQRQ8KvZEzKi3OQ128BqPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595813547414-1egvtpoj5q4p6g7qs45p9236rr12ff3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

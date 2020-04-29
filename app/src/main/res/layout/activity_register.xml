@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/LinearLayout1">
+
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/logo" />
+
+
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Wprowadź email..."
+            android:background="@drawable/inputs"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wprowadź hasło..."
+            android:layout_margin="8dp"
+            android:background="@drawable/inputs"
+            android:drawableLeft="@drawable/password"
+            android:padding="10dp"
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/registerConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Potwierdź hasło..."
+            android:background="@drawable/inputs"
+            android:drawableLeft="@drawable/password"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/buttonRegister"
+            android:text="Zarejestruj się"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:background="@drawable/button"/>
+        <TextView
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+            android:textColor="#FFF"
+            android:text="Posiadasz już konto? Kliknij tutaj aby się zalogować."
+            android:textSize="15sp"
+            android:id="@+id/login_acc_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLoginWith"
+            android:textColor="#FFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="albo zarejestruj się przez:"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="12dp">
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="105dp"
+            android:src="@drawable/google"/>
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="105dp"
+            android:src="@drawable/facebook"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
