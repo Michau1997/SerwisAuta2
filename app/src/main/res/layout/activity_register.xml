@@ -94,7 +94,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/LinearLayout1"
-        android:layout_marginLeft="75dp"
+        android:gravity="center"
+
         android:layout_marginTop="12dp">
         <ImageView
             android:layout_width="125dp"
